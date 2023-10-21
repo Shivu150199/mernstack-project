@@ -21,7 +21,3 @@ in app.jsx
 import browserRouter ,Router ,Route
 
 
-
-
-
-
