@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom'
 
 import {useDispatch, useSelector} from 'react-redux'
 import { signInSuccess, signInFailure, signInStart } from '../redux/user/userSlice'
+import OAuth from '../components/OAuth'
 const SignIn = () => {
   const [formData, setFormData] = useState({})
  const {loading,error}=useSelector((state)=>state.user)
@@ -68,6 +69,7 @@ const SignIn = () => {
         >
           {loading ? 'loading....' : 'sign in'}
         </button>
+        <OAuth text='sign in with google'/>
       </form>
       <div className="flex gap-2 my-4">
         <p>Do not have an account ?</p>

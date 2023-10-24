@@ -1,18 +1,20 @@
 import express  from "express";
 import dotenv from 'dotenv';
 import connection  from "./config/db.js";
-
+import cors from 'cors'
 import userRouter from './routes/user.route.js'
 import authRouter from './routes/auth.route.js'
+// import googleRouter from './routes/auth.route.js'
 const app=express();
 app.use(express.json());
 dotenv.config();
 
 
 
-
+app.use(cors());
 app.use('/api/user',userRouter)
 app.use('/api/auth',authRouter)
+
 
 
 app.use((err,req,res,next)=>{
