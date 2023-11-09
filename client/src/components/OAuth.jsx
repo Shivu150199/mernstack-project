@@ -26,6 +26,7 @@ export default function OAuth({ text }) {
       })
       const data = await res.json()
       dispatch(signInSuccess(data))
+      console.log('alli')
       navigate('/')
     } catch (error) {
       console.log('could not connect with google', error)

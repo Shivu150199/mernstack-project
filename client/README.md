@@ -21,3 +21,15 @@ in app.jsx
 import browserRouter ,Router ,Route
 
 
+
+
+
+profile.jsx
+```
+create profile card
+three input a image above them 
+image come from react redux;
+
+a update button 
+
+```
