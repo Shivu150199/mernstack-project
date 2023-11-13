@@ -33,3 +33,12 @@ image come from react redux;
 a update button 
 
 ```
+```
+add a input file type in above image 
+useRef for reference 
+and in input invoke useRef
+const fileref=useRef(null)
+in input ref={fileref}
+image -onClick={()=>fileRef.current.click}
+
+```
